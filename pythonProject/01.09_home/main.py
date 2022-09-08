@@ -39,9 +39,9 @@ def draw_2(data_table_2):
             column[1] += 1
         if data_table_2[i] == 3:
             column[2] += 1
-    fig1, ax1 = plt.subplots()
-    ax1.pie(column, labels=class_num, autopct='%1.1f%%')
-    ax1.axis('equal')
+    plt.subplots()
+    plt.pie(column, labels=class_num, autopct='%1.1f%%')
+    plt.axis('equal')
     plt.show()
 
 
